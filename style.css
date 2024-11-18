@@ -7,7 +7,8 @@ body,
 html{
     width: 100%;
     height: 100%;
-    font-family: Main-Font;
+    /* font-family: Main-Font; */
+    font-family: Main-Font-Regular;
     background: var(--main-bg);
     color: var(--white);
 }
@@ -20,12 +21,22 @@ html{
     font-family: Main-Font-bold;
     src: url(./Assets/Fonts/PPMori-SemiBold.ttf);
 }
-
-:root{
-    --white: #ECE7F0;
-    --main-bg: #0F0D0D;
+@font-face {
+    font-family: Main-Font-Regular;
+    src: url(./Assets/Fonts/PPMori-Regular.ttf);
 }
 
+:root{
+    --white: #FBF4FD;
+    --head-text: #fefcff;
+    --main-bg: #0F0D0D;
+}
+#main{
+        width: 100%;
+        max-width: 1920px;
+        display: block;
+        margin: 0 auto;
+}
 /* Page 1 Started */
 /* Page 1 Started */
 
@@ -42,4 +53,19 @@ html{
     right: 18px;
     opacity: 1;
 }
+#ball1:hover #cursor{
+    display: none;
+}
 /* Nav */
+
+/* Main text */
+#page-1-head{
+    margin-top: 9rem;
+    letter-spacing: -5px;
+    line-height: 95px;
+    text-align: center;
+}
+#page-1-head h1{
+    color: var(--head-text);
+    font-size: 6.3rem;
+}

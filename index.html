@@ -16,16 +16,13 @@
 </head>
 
 <body>
+
+<!-- Cursor -->
+<div id="cursor" class="fixed z-[999] w-[15px] h-[15px] bg-[#deb2f2] rounded-[50px] mix-blend-difference"></div>
+<!-- Cursor -->
+
     <!-- Main Wrapper -->
-
-
-
-
-
-
-
-
-    <div id="main" class="max-w-[1600px]">
+    <div id="main">
         <!-- Navbar Started -->
         <section id="page-1" class="w-[100%] min-h-[100vh] px-[2rem]">
             <nav class="flex items-center justify-between py-[18px]">
@@ -41,10 +38,20 @@
                     <h5><a href="#">Contact</a></h5>
                 </div>
                 <div id="nav-end" class="relative">
-                    <div id="ball1" class="w-[18px] h-[18px] bg-[white] rounded-[50px]"></div>
-                    <div id="ball2" class="w-[18px] h-[18px] bg-[white] rounded-[50px] absolute top-[0] right-[0]"></div>
+                    <div id="ball1" class="w-[18px] h-[18px] bg-[white] rounded-[50px] cursor-pointer"></div>
+                    <div id="ball2" class="w-[18px] h-[18px] bg-[white] rounded-[50px] absolute top-[0] right-[0] cursor-pointer">
+                    </div>
                 </div>
             </nav>
+            <div id="page-1-head" class="max-w-[1600px]">
+                <h1 id="head-1">A design studio made</h1>
+                <h1 id="head-2">to elevate your brand </h1>
+            </div>
+            <div id="page-1-para" class="text-center mt-[35px]">
+                <p class="text-[16px]">We build brand identities, creative websites, and visual <br> narratives that
+                    showcase the full extent of your potential. <br>
+                    Based in Washington DC, working with clients world-wide.</p>
+            </div>
         </section>
         <!-- Navbar Ended -->
     </div>
