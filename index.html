@@ -11,20 +11,71 @@
     <link rel="shortcut icon" href="./Assets/Imgs/Images/Duo_Favicon.jpg" type="image/x-icon">
     <!-- link Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Locomotive CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css">
 </head>
 
 <body>
     <!-- Main Wrapper -->
-    <div id="main">
-        <!-- Navbar Started -->
-        <section id="page-1">
-            <nav>
 
+
+
+
+
+
+
+
+    <div id="main" class="max-w-[1600px]">
+        <!-- Navbar Started -->
+        <section id="page-1" class="w-[100%] min-h-[100vh] px-[2rem]">
+            <nav class="flex items-center justify-between py-[18px]">
+                <div id="logo">
+                    <img class="h-[25px]" src="./Assets/Imgs/Svgs/logo.svg" alt="">
+                </div>
+                <div id="nav-links" class="flex item-center gap-[5px] bg-[transparent]">
+                    <h5 class="border-b-[1px] border-[white]"><a href="#">Home,</a></h5>
+                    <h5><a href="#">Work,</a></h5>
+                    <h5><a href="#">Services,</a></h5>
+                    <h5><a href="#">Studio,</a></h5>
+                    <h5><a href="#">Journal,</a></h5>
+                    <h5><a href="#">Contact</a></h5>
+                </div>
+                <div id="nav-end" class="relative">
+                    <div id="ball1" class="w-[18px] h-[18px] bg-[white] rounded-[50px]"></div>
+                    <div id="ball2" class="w-[18px] h-[18px] bg-[white] rounded-[50px] absolute top-[0] right-[0]"></div>
+                </div>
             </nav>
         </section>
         <!-- Navbar Ended -->
     </div>
     <!-- Main Wrapper -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ScrollTrigger CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Locomotive CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <!-- Gsap CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Custom JS -->
+    <script src="./app.js"></script>
 </body>
 
 </html>
