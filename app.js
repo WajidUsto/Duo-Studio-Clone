@@ -65,6 +65,7 @@ var tl = gsap.timeline({
         trigger: "#page-1",
         scroller: "#main",
         markers: true,
+        // start: "35% 63%",
         start: "35% 35%",
         end: "60% 20%",
         scrub : true,
@@ -82,4 +83,8 @@ tl.to("#head-2", {
 } , "head")
 tl.to("#page-1-para p",{
     filter : "blur(5px)"
+},"head")
+tl.to("#Video-Section video",{
+    top : "0%",
+    width : "85%"
 },"head")
