@@ -4,6 +4,15 @@ let mainWrapper = document.querySelector("#main")
 let page1 = document.querySelector("#page-1")
 
 
+
+// Locomotive Scroll
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('#main'),
+    smooth: true
+});
+// Locomotive Scroll
+
+
 // Cursor
 // Cursor
 
