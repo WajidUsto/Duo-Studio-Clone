@@ -65,9 +65,8 @@ var tl = gsap.timeline({
         trigger: "#page-1",
         scroller: "#main",
         markers: true,
-        // start: "35% 63%",
         start: "35% 35%",
-        end: "60% 20%",
+        end: "95% 5%",
         scrub : true,
         pin:true,
     }
