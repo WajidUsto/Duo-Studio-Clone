@@ -60,11 +60,13 @@ mainWrapper.addEventListener("mousemove", (dets) => {
 // Gsap ScrollTrigger 
 // Page1
 
+function Page1timeline(params) {
+    
 var tl = gsap.timeline({
     scrollTrigger: {
         trigger: "#page-1",
         scroller: "#main",
-        markers: true,
+        // markers: true,
         start: "35% 35%",
         end: "95% 5%",
         scrub : true,
@@ -85,5 +87,25 @@ tl.to("#page-1-para p",{
 },"head")
 tl.to("#Video-Section video",{
     top : "0%",
-    width : "85%"
+    width : "85%",
 },"head")
+
+}
+
+Page1timeline()
+
+
+var page2Bg = gsap.timeline({
+    scrollTrigger: {
+        trigger: "#page-2",
+        scroller: "#main",
+        // markers: true,
+        start: "45% 50% ",
+        end: "50% 50% ",
+        scrub : true
+    }
+})
+
+page2Bg.to("#main",{
+    backgroundColor : "#FEFCFF"
+})
