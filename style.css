@@ -7,10 +7,10 @@ body,
 html{
     width: 100%;
     height: 100%;
-    /* font-family: Main-Font; */
     font-family: Main-Font-Regular;
     background: var(--main-bg);
     color: var(--white);
+    cursor: default;
 }
 
 @font-face {
