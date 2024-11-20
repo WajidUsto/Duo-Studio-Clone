@@ -2,11 +2,16 @@
 let cursorMain = document.querySelector("#cursor")
 let mainWrapper = document.querySelector("#main")
 let page1 = document.querySelector("#page-1")
+let logo = document.querySelector("#logo img")
+let navlink = document.querySelector("#nav-links")
+let videoCursor = document.querySelector("#video-cursor")
+let videoContainer = document.querySelector("#video-container")
+
 
 
 
 // Locomotive Scroll
-function Locomotive(params) {
+function Locomotive() {
     gsap.registerPlugin(ScrollTrigger);
 
 // Using Locomotive Scroll from Locomotive https://github.com/locomotivemtl/locomotive-scroll
@@ -45,12 +50,35 @@ Locomotive()
 // Cursor
 // Cursor
 
+// Nav Cursorhover
+logo.addEventListener("mouseover",()=>{
+    gsap.to(cursorMain,{
+        scale : 2
+    })
+})
+logo.addEventListener("mouseleave",()=>{
+    gsap.to(cursorMain,{
+        scale : 1
+    })
+})
+navlink.addEventListener("mouseover",()=>{
+    gsap.to(cursorMain,{
+        scale : 2
+    })
+})
+navlink.addEventListener("mouseleave",()=>{
+    gsap.to(cursorMain,{
+        scale : 1
+    })
+})
+
+// Nav Cursorhover
 mainWrapper.addEventListener("mousemove", (dets) => {
     gsap.to(cursorMain, {
         x: dets.x,
         y: dets.y,
-        duration: 3.5,
-        ease: "elastic.out(1,0.3)",
+        // duration: 3.5,
+        // ease: "elastic.out(1,0.3)",
     })
 })
 // Cursor
@@ -60,7 +88,7 @@ mainWrapper.addEventListener("mousemove", (dets) => {
 // Gsap ScrollTrigger 
 // Page1
 
-function Page1timeline(params) {
+function Page1timeline() {
     
 var tl = gsap.timeline({
     scrollTrigger: {
@@ -76,24 +104,54 @@ var tl = gsap.timeline({
 
 tl.to("#head-1", {
     x : -100,
-    filter : "blur(5px)"
+    filter : "blur(5px)",
+    color : "#595959"
 } , "head")
 tl.to("#head-2", {
     x : 100,
-    filter : "blur(5px)"
+    filter : "blur(5px)",
+    color : "#595959"
 } , "head")
 tl.to("#page-1-para p",{
-    filter : "blur(5px)"
+    filter : "blur(5px)",
+    color : "#595959"
 },"head")
-tl.to("#Video-Section video",{
+tl.to("#video-container video",{
     top : "0%",
     width : "85%",
 },"head")
-
 }
-
 Page1timeline()
 
+// Video Cursor
+// Video Cursor
+
+function VCursor() {
+    videoContainer.addEventListener("mousemove", (dets) => {
+        gsap.to(videoCursor, {
+            x: dets.x,
+            y: dets.y,
+            transform : "translate(-50%,-50%)"
+        })
+    })
+    
+    videoContainer.addEventListener("mouseenter",()=>{
+        videoCursor.style.opacity = "1"
+        cursorMain.style.display = "none"
+    })
+    videoContainer.addEventListener("mouseleave",()=>{
+        videoCursor.style.opacity = "0"
+        cursorMain.style.display = "block"
+    })
+}
+
+VCursor()
+
+// Video Cursor
+// Video Cursor
+
+// PAGE 2
+// PAGE 2
 
 var page2Bg = gsap.timeline({
     scrollTrigger: {
@@ -109,3 +167,7 @@ var page2Bg = gsap.timeline({
 page2Bg.to("#main",{
     backgroundColor : "#FEFCFF"
 })
+
+
+// PAGE 2
+// PAGE 2
