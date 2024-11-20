@@ -120,8 +120,24 @@ tl.to("#video-container video",{
     top : "0%",
     width : "85%",
 },"head")
+// tl.to("#video-text",{
+//     opacity : 1,
+// },"head")
 }
 Page1timeline()
+
+gsap.to("#video-text",{
+    opacity : 1,
+    scrollTrigger: {
+        trigger: "#video-text h4 p",
+        scroller: "#main",
+        markers: true,
+        start: "90% 20%",
+        end: "90% 20%",
+        scrub : true,
+        pin:true,
+    }
+})
 
 // Video Cursor
 // Video Cursor
@@ -143,8 +159,19 @@ function VCursor() {
         videoCursor.style.opacity = "0"
         cursorMain.style.display = "block"
     })
+    
+    videoCursor.addEventListener("click",()=>{
+        var flag = 0
+        if (flag == 0) {
+                videoCursor.innerHTML = "Sound On"
+                flag = 1
+        } else {
+            videoCursor.innerHTML = "Sound Off"
+                flag = 0
+        }
+            
+    })
 }
-
 VCursor()
 
 // Video Cursor

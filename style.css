@@ -44,6 +44,7 @@ html{
 #nav-links h5{
     font-size: 14px;
     line-height: 16px;
+    mix-blend-mode: difference;
 }
 #ball2{
     transition: all ease-in-out 0.4s;
@@ -69,17 +70,3 @@ html{
     color: var(--head-text);
     font-size: 6.3rem;
 }
-
-#video-cursor{
-    transform: translate(-50%,0);
-}
-/* #Video-Container{
-    display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-        position: relative;
-        padding: calc(min(50vw, 960px)) calc(min(6vw, 115px)) 0;
-        font-size: 14px;
-        z-index: 3;
-} */
