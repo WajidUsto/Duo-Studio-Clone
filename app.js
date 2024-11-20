@@ -126,18 +126,18 @@ tl.to("#video-container video",{
 }
 Page1timeline()
 
-gsap.to("#video-text",{
-    opacity : 1,
-    scrollTrigger: {
-        trigger: "#video-text h4 p",
-        scroller: "#main",
-        markers: true,
-        start: "90% 20%",
-        end: "90% 20%",
-        scrub : true,
-        pin:true,
-    }
-})
+// gsap.to("#video-text",{
+//     opacity : 1,
+//     scrollTrigger: {
+//         trigger: "#video-text h4 p",
+//         scroller: "#main",
+//         markers: true,
+//         start: "90% 20%",
+//         end: "50% 60%",
+//         scrub : true,
+//         pin:true,
+//     }
+// })
 
 // Video Cursor
 // Video Cursor
@@ -147,9 +147,11 @@ function VCursor() {
         gsap.to(videoCursor, {
             x: dets.x,
             y: dets.y,
-            transform : "translate(-50%,-50%)"
+            
         })
+
     })
+    videoCursor.style.transform = "translate(-50%,-50%)";
     
     videoContainer.addEventListener("mouseenter",()=>{
         videoCursor.style.opacity = "1"

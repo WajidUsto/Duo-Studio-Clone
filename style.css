@@ -70,3 +70,9 @@ html{
     color: var(--head-text);
     font-size: 6.3rem;
 }
+#video-cursor{
+    transform: translate(-50%,-50%);
+}
+#video-text{
+    transition: all ease 0.5s;
+}
