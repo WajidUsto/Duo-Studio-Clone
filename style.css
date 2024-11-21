@@ -25,6 +25,10 @@ html{
     font-family: Main-Font-Regular;
     src: url(./Assets/Fonts/PPMori-Regular.ttf);
 }
+@font-face {
+    font-family: smallFontRegular;
+    src: url(./Assets/Fonts/SuisseIntl-Regular-WebXL.ttf);
+}
 
 :root{
     --white: #FBF4FD;
@@ -75,4 +79,15 @@ html{
 }
 #video-text{
     transition: all ease 0.5s;
+}
+
+/* Page 2 Started */
+/* Page 2 Started */
+
+
+#page-2-head{
+    font-family: Main-Font-bold;
+}
+#small-span{
+    font-family: smallFontRegular;
 }

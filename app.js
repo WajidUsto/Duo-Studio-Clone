@@ -186,15 +186,16 @@ var page2Bg = gsap.timeline({
     scrollTrigger: {
         trigger: "#page-2",
         scroller: "#main",
-        // markers: true,
-        start: "45% 50% ",
-        end: "50% 50% ",
+        markers: true,
+        start: "top 50% ",
+        end: "10% 50% ",
         scrub : true
     }
 })
 
 page2Bg.to("#main",{
-    backgroundColor : "#FEFCFF"
+    backgroundColor : "#FEFCFF",
+    color : "black"
 })
 
 
