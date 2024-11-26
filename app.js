@@ -188,7 +188,7 @@ var page2Bg = gsap.timeline({
         scroller: "#main",
         markers: true,
         start: "top 50% ",
-        end: "10% 50% ",
+        end: "3% 50% ",
         scrub : true
     }
 })
