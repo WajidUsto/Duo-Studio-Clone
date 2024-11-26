@@ -92,13 +92,14 @@ html{
     font-family: smallFontRegular;
 }
 #card-img{
-    font-family: smallFontRegular;
+    
     position: absolute;
     width: 60%;
     right: -176px;
     top: 30px;
     height: 38rem;
 }
-#card-1{
+#card{
     border-top: 1px solid black;
+    font-family: smallFontRegular;
 }

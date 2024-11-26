@@ -6,7 +6,8 @@ let logo = document.querySelector("#logo img")
 let navlink = document.querySelector("#nav-links")
 let videoCursor = document.querySelector("#video-cursor")
 let videoContainer = document.querySelector("#video-container")
-
+// let cardtext = document.querySelectorAll("#card")
+var cardtext = document.querySelectorAll("#card")
 
 
 
@@ -201,3 +202,18 @@ page2Bg.to("#main",{
 
 // PAGE 2
 // PAGE 2
+
+// Card Section
+
+cardtext.forEach((item)=>{
+    item.addEventListener("mouseenter",()=>{
+        gsap.to(cursorMain,{
+            scale : 2
+        })
+    })
+    item.addEventListener("mouseleave",()=>{
+        gsap.to(cursorMain,{
+            scale : 1
+        })
+    })
+})
